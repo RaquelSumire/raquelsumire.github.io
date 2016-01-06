@@ -1,43 +1,70 @@
-body{
-	color:#555555;
-	font-family: Arial,sans-serif;
-	font-size: 13px;
+/*GENERAL*/
+* ul{
+  padding: 0px;
 }
-h1,h2,h3,h4,h5{
-	color:#A9268D;
-	font-family: "Oswald",Arial,sans-serif;
-	text-align: center;
+* a{
+    text-decoration: none;
 }
-.list-nav{
-	text-align: center;
+/*MENU PARA TODAS LAS PAGINAS*/
+header{
+    width: 100%;
+    background: #fff;
+    opacity: 0.9;
+    position: fixed; 
+    z-index: 999;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
-.list-nav li{
-	display: inline-block;
+.navbar-default{
+    background: #fff;
+    border: none;
+    margin-bottom: 10px;
 }
-.list-nav a{
-	display: block;
-	padding: 5px 20px;
-	color:#555555;
-	font-family: "Oswald",Arial,sans-serif;
-	text-transform: uppercase;
-	transition:all 0.5s;
+#bs-example-navbar-collapse-1{
+    background: #fff;
+    padding-top: 10px;
 }
-.list-nav a:hover{
-	text-decoration: none;
-	background: #ECECEC;
-	transform:scale(1.2);
+#bs-example-navbar-collapse-1 a{
+    color:grey;
+    font-weight: bold;
+    transition:all 0.3s;
 }
-.header-content h1{
-	color:#DF01A5;
+#bs-example-navbar-collapse-1 a:hover, #bs-example-navbar-collapse-1 a:active{
+    background: #A9268D;
+    color: #fff;
+    text-transform: uppercase;
 }
-.header-content{
+.navbar-toggle.collapsed{
+    margin: 12px 0px;
+}
+.navbar-right li{
+    font-weight: bold;
+    display: inline-block;
+}
+.navbar-right i{
+    color: grey;
+    font-size: 30px;
+}
+.sigueme{
+    padding-top: 20px;
+}
+/*MI BANNER*/
+#mibanner{
 	background: url("../images/mibanner.jpg") center center;
 	background-size: cover;
-	color:#FF00BF;
-	padding: 50px 0;
-	text-align: center;
+    padding: 120px 0px;
+    border: 1px solid #DF01A5;
 }
-.header-content img:hover{
+#mibanner img{
+    width: 20%;
+	color:#DF01A5;
+    border-radius: 100%;
+    opacity: 0.6;
+    border: 1px solid grey;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+    padding: 3px;
+}
+#mibanner img:hover{
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	transition: all 1s ease;
@@ -47,20 +74,59 @@ h1,h2,h3,h4,h5{
 	-ms-transform: scale(1.2) rotate(-720deg) ;
 	transform: scale(1.2) rotate(-720deg);
 }
-.logo {
-	height: 100px;	
+#mibanner h1{
+    color: #A9268D;
+    font-weight: bold;
+    font-family: 'Arizonia';
 }
-.about-me .biografia img{
-	float:left;
-	width: 200px;
-	margin-right: 15px;
+#mibanner h4, #mibanner h5{
+   font-family: 'Kotta One', serif;
 }
-.about-me{
-	background: url("../images/tile1.png");
+
+/*SOBRE MI*/ 
+#sobremi{
+    background: url("../images/misti2.jpg") center;
+    background-size: cover;
+    padding: 10px 0px 20px 0px;
+    color: grey;
 }
-.about-me p{
-	text-align: justify;
+#sobremi h1{
+    font-family: 'Kotta One', serif;
+    color: #A9268D;
 }
+#sobremi hr{
+    width: 40px;
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+    border: 1px solid grey;
+}
+#sobremi h3{
+    padding: 0px;
+    margin: 0px;
+}
+#sobremi p{
+    line-height: 2.1;
+}
+/*MI PORTAFOLIO*/
+#portafolio{
+    padding: 50px 0px 50px 0px;
+}
+#portafolio h1{
+    color: #A9268D;
+    font-family: 'Kotta One', serif;
+}
+#portafolio .btn{
+    border: 1px solid grey;
+    color: grey;
+}
+#portafolio .btn:hover, #portafolio .btn:active{
+    background: grey;
+    color: #fff;
+}
+#portafolio h5{
+    text-align: center;
+}
+
 .favoritos{
 	overflow-y: scroll;  
 	height:325px;
