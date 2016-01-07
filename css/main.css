@@ -1,3 +1,9 @@
+@media screen and (max-width:400px) {
+    .titulo{ font-size: 40px; } 
+    .redes{ height: 40px;}
+    #footer h5{ font-size: 7px;}
+}
+
 /*GENERAL*/
 * ul{
   padding: 0px;
@@ -29,7 +35,7 @@ header{
     font-weight: bold;
     transition:all 0.3s;
 }
-#bs-example-navbar-collapse-1 a:hover, #bs-example-navbar-collapse-1 a:active{
+#bs-example-navbar-collapse-1 a:hover, #bs-example-navbar-collapse-1 .active{
     background: #A9268D;
     color: #fff;
     text-transform: uppercase;
@@ -63,6 +69,7 @@ header{
     border: 1px solid grey;
     box-shadow: 0 3px 20px rgba(0,0,0,0.2);
     padding: 3px;
+    margin: 20px 0px 20px 0px;
 }
 #mibanner img:hover{
 	-webkit-transition: all 1s ease;
@@ -79,8 +86,13 @@ header{
     font-weight: bold;
     font-family: 'Arizonia';
 }
-#mibanner h4, #mibanner h5{
-   font-family: 'Kotta One', serif;
+#mibanner h5{
+    font-family: "Kotta";
+    background: #f3cdff;
+    padding: 7px 0px 7px 0px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+    font-weight: bold;
+    color: grey;
 }
 
 /*SOBRE MI*/ 
@@ -119,7 +131,11 @@ header{
     border: 1px solid grey;
     color: grey;
 }
-#portafolio .btn:hover, #portafolio .btn:active{
+#portafolio a:hover{
+    background: #fff;
+    color: #A9268D;
+}
+#portafolio #boton .active{
     background: grey;
     color: #fff;
 }
@@ -127,46 +143,63 @@ header{
     text-align: center;
 }
 
-.favoritos{
-	overflow-y: scroll;  
-	height:325px;
+/*PAGINA SOBRE-ME*/
+*{
+    outline: 1px solid red;
 }
-.favoritos li{
-	display: inline-block;
+#sobre-mi{
+    overflow: hidden;
+    padding-bottom: 30px;
 }
-.mis-favoritos{
-	width: 200px;
-	height: 200px;
-	border-radius: 100%;
-	margin: 10px;
-	border: 2px solid violet;
-	padding: 8px;
-	background: white;
+#sobre-mi video{
+    opacity: 0.6;
 }
-.subtitulos{
+#filtro{
+	background: rgba(0,0,0,.7); width: 100%;  padding: 0px; margin: 0px; 
+}
+.mis-titulos{
+    text-align: center; 
+}
+
+/*CONTACTO*/
+#contacto{
+	background: url("../images/tile1.png");
 	text-align: center;
-	font-family: "Caveat", cursive;
-	font-weight: bold;
-	color:#6A0888;
+    padding-bottom: 30px;
 }
-.list-favoritos a:hover {
-	transform:scale(1.1);
-	transition:all 0.6s;
-	display: block;	
+#contacto i{
+    font-size: 100px;
 }
-.contac{
-	background: url("../images/tile2.png");
-	text-align: center;
+#contacto h1{
+    color: #A9268D;
+    font-family: 'Kotta One', serif;
 }
-.contac li{
+#contacto li{
 	display: inline-block;
 	list-style: none;
 }
-.contac img{
-	margin: 40px;
+#contacto img{
+	margin: 20px;
+    height: 100px;
 }
-.contac a:hover{
+#contacto a:hover{
 	transform:scale(1.1);
 	transition:all 0.6s;
 	display: block;
+}
+/*FOOTER*/
+#footer{
+    background: #747474;
+    color: #b8bfc4;
+}
+#footer h5{
+    padding-top: 10px;
+}
+#footer li{
+    display: inline-block;
+    padding-right: 5px;
+}
+#footer a{
+    color: #b8bfc4;
+    text-decoration: none;
 }
