@@ -1,6 +1,7 @@
 @media screen and (max-width:400px) {
-    .titulo{ font-size: 40px; } 
-    .redes{ height: 40px;}
+    .titulo{ font-size: 40px; }
+    #sobremi p{ font-size: 11px;}
+    #contacto li a img{ height: 40px;}
     #footer h5{ font-size: 7px;}
 }
 
@@ -86,8 +87,7 @@ header{
     font-weight: bold;
     font-family: 'Arizonia';
 }
-#mibanner h5{
-    font-family: "Kotta";
+#mibanner h6{
     background: #f3cdff;
     padding: 7px 0px 7px 0px;
     box-shadow: 0 3px 20px rgba(0,0,0,0.2);
@@ -144,9 +144,6 @@ header{
 }
 
 /*PAGINA SOBRE-ME*/
-*{
-    outline: 1px solid red;
-}
 #sobre-mi{
     overflow: hidden;
     padding-bottom: 30px;
@@ -158,8 +155,13 @@ header{
 	background: rgba(0,0,0,.7); width: 100%;  padding: 0px; margin: 0px; 
 }
 .mis-titulos{
-    text-align: center; 
+    z-index: 700;
+    width: 100%;
+    margin: 25% 0%;
+    text-align: center;
+    color: #fff;
 }
+
 
 /*CONTACTO*/
 #contacto{

@@ -29,6 +29,8 @@ $(document).ready(init);
     $(document).ready(initPage);
     	function initPage(){
     		$('#arrow-up').click(irArriba);
+            
+            TweenMax.to('body, html')
     	}
     	function irArriba(evt){
     		TweenMax.to('body, html', 5 , {  scrollTo:{y:0},ease:Quart.easeOut});
