@@ -73,6 +73,12 @@
     </div>
 </div>
 <!--SOBRE MI-->
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 <div id="sobremi">
     <div class="container text-center">
        <div class="row">
@@ -267,5 +273,24 @@
     <script src="tweenmax/TweenMax.min.js"></script>
     <script src="tweenmax/plugins/ScrollToPlugin.min.js"></script>
     <script src="js/main.js"></script>
+    
+     <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '143190242724645',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 </body>
 </html>
