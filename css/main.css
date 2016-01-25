@@ -65,16 +65,17 @@ header{
 }
 /*MI BANNER*/
 #mibanner{
-	background: url("../images/mibanner.jpg") center center;
+	background: url("../images/mibanner2.jpg") center;
 	background-size: cover;
     padding: 120px 0px;
     border: 1px solid #DF01A5;
+    opacity: 0.9;
 }
 #mibanner img{
     width: 20%;
 	color:#DF01A5;
     border-radius: 100%;
-    opacity: 0.6;
+    opacity:0.8;
     border: 1px solid grey;
     box-shadow: 0 3px 20px rgba(0,0,0,0.2);
     margin: 20px 0px 20px 0px;
@@ -133,9 +134,17 @@ header{
 #sobremi p{
     line-height: 2.1;
 }
+/*HABILIDADES*/
+#habilidades{
+    padding: 0px 0px 70px 0px;
+}
+#habilidades h1{
+    color: #A9268D;
+    font-family: 'Kotta One', serif;
+}
 /*MI PORTAFOLIO*/
 #portafolio{
-    padding: 50px 0px 50px 0px;
+  padding: 50px 0px 50px 0px;
 }
 #portafolio h1{
     color: #A9268D;
@@ -155,6 +164,13 @@ header{
 }
 #portafolio h5{
     text-align: center;
+    color: gray;
+    font-weight: bold;
+}
+#portafolio .item-inner{
+    padding: 5px;
+    border: 1px dashed #999;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.2);
 }
 
 /*PAGINA SOBRE-ME*/
