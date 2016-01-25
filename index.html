@@ -1,12 +1,17 @@
 <!doctype html>
 <html>
 <head>
+ <title>Raquel Sumire</title>
   <meta charset="UTF-8">
-  <title>Raquel Sumire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Pagina que describe los modelos de paginas web elabarodas por Raquel Sumire">
+  <meta name="description" content="Pagina que describe los modelos de paginas web elaboradas por Raquel Sumire">
   <meta name="author" content="Raquel-Sumire">
+  <meta property="og:url" content="http://raquelsumire.github.io/" />
+  <meta property="og:type"  content="Mi Pagina" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="How much does culture influence creative thinking?" />
+  <meta property="og:image"  content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -31,17 +36,19 @@
                   </button>
                 </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                      <ul class="nav navbar-nav navbar">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar">
+                        <li class="logo"><i class="fa fa-heart"></i> RS</li>
+                    </ul>
+                
+                      <ul class="nav navbar-nav navbar navbar-right">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="#sobremi">Sobre mi</a></li>
                         <li><a href="#portafolio">Portafolio</a></li>
                         <li><a href="#contacto">Contacto</a></li>
+                        <li class="sigueme"><a href="https://github.com/RaquelSumire" target="_blank">Sigueme <i class="fa fa-github"></i></a></li> 
                     </ul>
-                     <ul class="nav navbar-nav navbar-right"> 
-                         <li class="sigueme">SIGUEME</li> 
-                         <li><a href="https://github.com/RaquelSumire" target="_blank"><i class="fa  fa-github"></i></a></li>
-                    </ul>
+                    
                 </div><!-- /.navbar-collapse -->
             </nav>
         </div>
@@ -54,43 +61,24 @@
        <div class="row">
            <div class="col-md-12">
                 <h1 class="titulo">Raquel Sumire</h1>
-                <img src="images/mifoto.jpg">  
+                <img src="images/mifoto.jpg"> 
+                <h5>Front-end developer apassionate</h5> 
            </div>
-                <div id="carreras"class="col-md-2 col-md-offset-3">
-                    <h6><i class="fa fa-star"></i> Relacionista Pública <i class="fa fa-star"></i></h6>
-                    
-                </div>
-                <div class="col-md-2">
-                    <h6><i class="fa fa-heart"></i> Desarrolladora Web <i class="fa fa-heart"></i></h6>
-                    
-                </div>
-                <div class="col-md-2">
-                    <h6><i class="fa fa-star"></i> Secretaria Ejecutiva <i class="fa fa-star"></i></h6>
-                    
-                </div>
-            </div>
-       </div>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#portafolio">Portafolio</a>
+        </div>
     </div>
 </div>
 <!--SOBRE MI-->
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
 <div id="sobremi">
     <div class="container text-center">
        <div class="row">
            <div class="col-md-12">
                 <h1><br>Sobre mi</h1>
-                <h3>..</h3>
-                <h3><i class="fa fa-angle-left"></i><hr><i class="fa fa-angle-right"></i></h3>
-                <img src="images/sobre-mi.png" alt="foto"> 
+                <h3><i class="fa fa-spinner"></i></h3>
                 <p>Hola mi nombre es Raquel Sumire, pero me suelen llamar algunos de mis amigos Rachel.<br>
                 Soy de Perú de la hermosa "Ciudad Blanca de Arequipa", y menciono hermosa porque amo mi ciudad, <br>
-                 me siento muy orgullosa del lugar donde naci y es donde actualmente el magnifico lugar
-                 donde me encuentro.<br>
+                 me siento muy orgullosa del lugar donde naci y es donde actualmente me encuentro.<br>
                  Soy Relacionista Pública, esta carrera profesional la desarrolle en la Universidad Nacional de San Augustin,<br>
                  tambien tengo estudios en Secretariado Ejecutivo, y por ultimo y una de mis más grandes satisfacciones, <br>
                  soy una Desarrolldora Web gracias a LABORATORIA.</p>
@@ -123,7 +111,7 @@
                       <div class="portfolio-item">
                         <div class="item-inner">
                          <a href="http://raquelsumire.github.io/Hackaton-unsa/" target="_blank">
-                          <img class="img-responsive" src="images/portafolio/unsa.jpg" alt=""></a>
+                          <img class="img-responsive" src="images/portafolio/1.jpg" alt=""></a>
                           <h5>
                             UNSA
                           </h5>
@@ -267,14 +255,20 @@
         </div>
     </div>
 </div>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
   <!--JAVA -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="tweenmax/TweenMax.min.js"></script>
     <script src="tweenmax/plugins/ScrollToPlugin.min.js"></script>
     <script src="js/main.js"></script>
-    
-     <script>
+    <script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '143190242724645',
@@ -290,7 +284,6 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-</script>
-
+   </script>
 </body>
 </html>
