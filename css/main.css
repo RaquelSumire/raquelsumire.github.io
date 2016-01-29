@@ -3,6 +3,8 @@
     #sobremi p{ font-size: 11px;}
     #contacto li a img{ height: 40px;}
     #footer h5{ font-size: 7px;}
+    hr{ width: 1px;}
+    #icono{ padding: 0px;}
 }
 
 /*GENERAL*/
@@ -14,6 +16,16 @@
 }
 * li{
     list-style: none;
+}
+#icono{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+hr{
+    width: 100px;
+    display: inline-block;
+    margin:40px 40px 4px 40px;
+    border: 1px solid grey;
 }
 /*MENU PARA TODAS LAS PAGINAS*/
 header{
@@ -63,6 +75,7 @@ header{
 .sigueme i{
     font-size: 15px;
 }
+
 /*MI BANNER*/
 #mibanner{
 	background: url("../images/mibanner2.jpg") center;
@@ -121,12 +134,6 @@ header{
     font-family: 'Kotta One', serif;
     color: #A9268D;
 }
-#sobremi hr{
-    width: 40px;
-    display: inline-block;
-    margin: 0px 5px 0px 5px;
-    border: 1px solid grey;
-}
 #sobremi h3{
     padding: 0px;
     margin: 0px;
@@ -134,6 +141,7 @@ header{
 #sobremi p{
     line-height: 2.1;
 }
+
 /*HABILIDADES*/
 #habilidades{
     padding: 0px 0px 70px 0px;
