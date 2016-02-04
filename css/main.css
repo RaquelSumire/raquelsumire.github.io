@@ -3,10 +3,7 @@
     #sobremi p{ font-size: 11px;}
     #contacto li a img{ height: 40px;}
     #footer h5{ font-size: 7px;}
-    hr{ width: 1px;}
-    #icono{ padding: 0px;}
 }
-
 /*GENERAL*/
 * ul{
   padding: 0px;
@@ -17,16 +14,7 @@
 * li{
     list-style: none;
 }
-#icono{
-    font-size: 20px;
-    padding: 10px 0px;
-}
-hr{
-    width: 100px;
-    display: inline-block;
-    margin:40px 40px 4px 40px;
-    border: 1px solid grey;
-}
+
 /*MENU PARA TODAS LAS PAGINAS*/
 header{
     width: 100%;
@@ -81,7 +69,6 @@ header{
 	background: url("../images/mibanner2.jpg") center;
 	background-size: cover;
     padding: 120px 0px;
-    border: 1px solid #DF01A5;
     opacity: 0.9;
 }
 #mibanner img{
@@ -123,10 +110,14 @@ header{
     text-decoration: none;
 }
 
+/*FONDO GENERAL*/
+#mifondo{
+    background: url("../images/mifondo2.jpg") center;
+    background-size: cover;
+}
+
 /*SOBRE MI*/ 
 #sobremi{
-    background: url("../images/misti2.jpg") center;
-    background-size: cover;
     padding: 10px 0px 20px 0px;
     color: grey;
 }
@@ -200,10 +191,10 @@ header{
     color: #fff;
 }
 
-
 /*CONTACTO*/
 #contacto{
-	background: url("../images/tile1.png");
+	background: url("../images/footer.png") center center;
+    background-size: cover;
 	text-align: center;
     padding-bottom: 30px;
 }
