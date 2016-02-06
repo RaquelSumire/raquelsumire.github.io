@@ -1,4 +1,4 @@
-@media screen and (max-width:400px) {
+@media screen and (min-width:241px) and (max-width:320px)  {
     .titulo{ font-size: 40px; }
     #sobremi p{ font-size: 11px;}
     #contacto li a img{ height: 40px;}
@@ -167,6 +167,7 @@ header{
     background-size: cover;
     padding: 80px 0px 100px 0px;
 }
+
 #portafolio h1{
     color: #A9268D;
     font-family: 'Kotta One', serif;
